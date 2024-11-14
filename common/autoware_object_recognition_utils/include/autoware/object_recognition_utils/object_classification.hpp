@@ -35,7 +35,7 @@ inline ObjectClassification getHighestProbClassification(
     [](const auto & a, const auto & b) { return a.probability < b.probability; });
 }
 
-inline std::uint8_t getHighestProbLabel(
+inline uint8_t getHighestProbLabel(
   const std::vector<ObjectClassification> & object_classifications)
 {
   auto classification = getHighestProbClassification(object_classifications);

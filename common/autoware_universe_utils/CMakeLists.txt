@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
 project(autoware_universe_utils)
 
+add_compile_options(-Wno-maybe-uninitialized)
 option(BUILD_EXAMPLES "Build examples" OFF)
 
 find_package(autoware_cmake REQUIRED)
